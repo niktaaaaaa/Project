@@ -1,0 +1,45 @@
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-areas:
+     "a a b c"
+     /*"a a b c"*/
+     /*"d e e c"*/
+     "d e e c";
+    gap: 20px;
+}
+
+.box1 {
+    grid-area: a;
+    background-color: hsl(263, 55%, 52%);
+
+}
+
+.box2 {
+    grid-area: b;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.box3 {
+    grid-area: d;
+    background-color: white;
+
+}
+
+.box4 {
+    grid-area: e;
+    background-color: hsl(219, 29%, 14%);
+
+}
+
+.box5 {
+    grid-area: c;
+    background-color: white;
+
+}
